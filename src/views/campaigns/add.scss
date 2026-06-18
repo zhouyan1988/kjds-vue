@@ -1,0 +1,259 @@
+
+.campaigns-add-box {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.l-top-box {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.l-content-box {
+  width: 100%;
+  height: calc(100vh - 40px - 32px - 20px);
+
+  :deep(.el-card__body) {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .el-card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .el-row {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .el-col {
+    height: 100%;
+  }
+}
+
+.l-content-carousel {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: rgb(246, 246, 247);
+  border: 1px solid rgb(240, 240, 240);
+
+  .konvajs-content {
+    position: relative;
+    user-select: none;
+    width: 100% !important;
+    height: auto !important;
+
+    :deep(.canvas-container) {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    :deep(.upper-canvas),
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+
+      padding: 0;
+      margin: 0;
+      border: 0;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+}
+
+#canvasBox {
+  width: 100% !important;
+  height: auto !important;
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* 左侧图信息 */
+.imgeInfo {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px dashed #327ff1;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.editBOX {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin: 40px 0 20px 0;
+  color: #327ff1;
+}
+
+.confirmBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.templatImage {
+  width: 100%;
+  margin-top: 20px;
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+
+.templatImage .title {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.templatImage .imgBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.templatImage .imgBox img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  border: 1px solid #e4e7ed;
+  border-radius: 10px;
+  color: #f73b1a;
+  display: block;
+}
+
+.imgList {
+  position: relative;
+}
+
+.postionSelect {
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  /* border: 1px solid #ee3c54; */
+}
+
+.l-radio-group-img {
+  .l-radio-group-image {
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  :deep(.ivu-radio-wrapper-checked) {
+    .l-radio-group-image {
+      border: 2px solid #57a3f3;
+    }
+  }
+  :deep(.ivu-radio) {
+    display: none;
+  }
+}
+
+.l-radio-group-color {
+  :deep(.ivu-radio) {
+    display: none;
+  }
+
+  .l-radio-group-color-item {
+    width: 27px;
+    height: 27px;
+  }
+
+  :deep(.ivu-radio-wrapper-checked) {
+    .l-radio-group-color-item {
+      border: 2px solid #57a3f3;
+    }
+  }
+}
+
+.l-personalized-img {
+  .l-personalized-img-radio {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .l-personalized-image-text {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  :deep(.ivu-radio-wrapper-checked) {
+    .l-personalized-img-radio {
+      border: 2px solid #ee3c54;
+    }
+  }
+  :deep(.ivu-radio-wrapper) {
+    position: relative;
+
+    .ivu-radio {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 50px;
+      z-index: 1;
+    }
+
+    .ivu-radio-checked .ivu-radio-inner {
+      border-color: #ee3c54;
+    }
+
+    .ivu-radio-inner:after {
+      background-color: #ee3c54;
+    }
+  }
+}
+
+.img-upload {
+  width: 77px;
+  height: 77px;
+  border: 1px dashed #e4e7ed;
+  cursor: pointer;
+
+  .img-upload-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+    }
+  }
+}

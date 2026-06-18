@@ -1,0 +1,1778 @@
+[
+  {
+    "name": "3DIsometric-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/3DIsometric-Black.ttf",
+    "img": "/assets/fontspre/3DIsometric-Black.png"
+  },
+  {
+    "name": "3DIsometric-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/3DIsometric-Bold.ttf",
+    "img": "/assets/fontspre/3DIsometric-Bold.png"
+  },
+  {
+    "name": "3DIsometric-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/3DIsometric-Regular.ttf",
+    "img": "/assets/fontspre/3DIsometric-Regular.png"
+  },
+  {
+    "name": "AbrilFatface-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/AbrilFatface-Regular.ttf",
+    "img": "/assets/fontspre/AbrilFatface-Regular.png"
+  },
+  {
+    "name": "AdobeSongStd",
+    "type": "ttf",
+    "file": "/assets/fonts/AdobeSongStd.ttf",
+    "img": "/assets/fontspre/AdobeSongStd.png"
+  },
+  {
+    "name": "Agbalumo-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Agbalumo-Regular.ttf",
+    "img": "/assets/fontspre/Agbalumo-Regular.png"
+  },
+  {
+    "name": "AGOXESGAME",
+    "type": "ttf",
+    "file": "/assets/fonts/AGOXESGAME.ttf",
+    "img": "/assets/fontspre/AGOXESGAME.png"
+  },
+  {
+    "name": "Aktura-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Aktura-Regular.ttf",
+    "img": "/assets/fontspre/Aktura-Regular.png"
+  },
+  {
+    "name": "AlbertSans-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Black.ttf",
+    "img": "/assets/fontspre/AlbertSans-Black.png"
+  },
+  {
+    "name": "AlbertSans-BlackItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-BlackItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-BlackItalic.png"
+  },
+  {
+    "name": "AlbertSans-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Bold.ttf",
+    "img": "/assets/fontspre/AlbertSans-Bold.png"
+  },
+  {
+    "name": "AlbertSans-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-BoldItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-BoldItalic.png"
+  },
+  {
+    "name": "AlbertSans-ExtraBold",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-ExtraBold.ttf",
+    "img": "/assets/fontspre/AlbertSans-ExtraBold.png"
+  },
+  {
+    "name": "AlbertSans-ExtraBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-ExtraBoldItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-ExtraBoldItalic.png"
+  },
+  {
+    "name": "AlbertSans-ExtraLight",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-ExtraLight.ttf",
+    "img": "/assets/fontspre/AlbertSans-ExtraLight.png"
+  },
+  {
+    "name": "AlbertSans-ExtraLightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-ExtraLightItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-ExtraLightItalic.png"
+  },
+  {
+    "name": "AlbertSans-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Italic.ttf",
+    "img": "/assets/fontspre/AlbertSans-Italic.png"
+  },
+  {
+    "name": "AlbertSans-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Light.ttf",
+    "img": "/assets/fontspre/AlbertSans-Light.png"
+  },
+  {
+    "name": "AlbertSans-LightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-LightItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-LightItalic.png"
+  },
+  {
+    "name": "AlbertSans-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Medium.ttf",
+    "img": "/assets/fontspre/AlbertSans-Medium.png"
+  },
+  {
+    "name": "AlbertSans-MediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-MediumItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-MediumItalic.png"
+  },
+  {
+    "name": "AlbertSans-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Regular.ttf",
+    "img": "/assets/fontspre/AlbertSans-Regular.png"
+  },
+  {
+    "name": "AlbertSans-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-SemiBold.ttf",
+    "img": "/assets/fontspre/AlbertSans-SemiBold.png"
+  },
+  {
+    "name": "AlbertSans-SemiBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-SemiBoldItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-SemiBoldItalic.png"
+  },
+  {
+    "name": "AlbertSans-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-Thin.ttf",
+    "img": "/assets/fontspre/AlbertSans-Thin.png"
+  },
+  {
+    "name": "AlbertSans-ThinItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/AlbertSans-ThinItalic.ttf",
+    "img": "/assets/fontspre/AlbertSans-ThinItalic.png"
+  },
+  {
+    "name": "AlimamaDaoLiTi",
+    "type": "ttf",
+    "file": "/assets/fonts/AlimamaDaoLiTi.ttf",
+    "img": "/assets/fontspre/AlimamaDaoLiTi.png"
+  },
+  {
+    "name": "AlimamaDongFangDaKai",
+    "type": "ttf",
+    "file": "/assets/fonts/AlimamaDongFangDaKai.ttf",
+    "img": "/assets/fontspre/AlimamaDongFangDaKai.png"
+  },
+  {
+    "name": "AllessaPersonalUse",
+    "type": "ttf",
+    "file": "/assets/fonts/AllessaPersonalUse.ttf",
+    "img": "/assets/fontspre/AllessaPersonalUse.png"
+  },
+  {
+    "name": "Allura-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Allura-Regular.ttf",
+    "img": "/assets/fontspre/Allura-Regular.png"
+  },
+  {
+    "name": "Alpino-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/Alpino-Black.ttf",
+    "img": "/assets/fontspre/Alpino-Black.png"
+  },
+  {
+    "name": "Alpino-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Alpino-Bold.ttf",
+    "img": "/assets/fontspre/Alpino-Bold.png"
+  },
+  {
+    "name": "Alpino-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/Alpino-Light.ttf",
+    "img": "/assets/fontspre/Alpino-Light.png"
+  },
+  {
+    "name": "Alpino-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Alpino-Medium.ttf",
+    "img": "/assets/fontspre/Alpino-Medium.png"
+  },
+  {
+    "name": "Alpino-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Alpino-Regular.ttf",
+    "img": "/assets/fontspre/Alpino-Regular.png"
+  },
+  {
+    "name": "Alpino-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/Alpino-Thin.ttf",
+    "img": "/assets/fontspre/Alpino-Thin.png"
+  },
+  {
+    "name": "Amulya-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Amulya-Bold.ttf",
+    "img": "/assets/fontspre/Amulya-Bold.png"
+  },
+  {
+    "name": "Apple-chancery",
+    "type": "ttf",
+    "file": "/assets/fonts/Apple-chancery.ttf",
+    "img": "/assets/fontspre/Apple-chancery.png"
+  },
+  {
+    "name": "arial",
+    "type": "ttf",
+    "file": "/assets/fonts/arial.ttf",
+    "img": "/assets/fontspre/arial.png"
+  },
+  {
+    "name": "arialbd",
+    "type": "ttf",
+    "file": "/assets/fonts/arialbd.ttf",
+    "img": "/assets/fontspre/arialbd.png"
+  },
+  {
+    "name": "ARLRDBD",
+    "type": "ttf",
+    "file": "/assets/fonts/ARLRDBD.ttf",
+    "img": "/assets/fontspre/ARLRDBD.png"
+  },
+  {
+    "name": "Arnoprosmtext",
+    "type": "ttf",
+    "file": "/assets/fonts/Arnoprosmtext.ttf",
+    "img": "/assets/fontspre/Arnoprosmtext.png"
+  },
+  {
+    "name": "Atyan-Dsegh",
+    "type": "ttf",
+    "file": "/assets/fonts/Atyan-Dsegh.ttf",
+    "img": "/assets/fontspre/Atyan-Dsegh.png"
+  },
+  {
+    "name": "August-Shining",
+    "type": "ttf",
+    "file": "/assets/fonts/August-Shining.ttf",
+    "img": "/assets/fontspre/August-Shining.png"
+  },
+  {
+    "name": "AvantGarde-Demi",
+    "type": "ttf",
+    "file": "/assets/fonts/AvantGarde-Demi.ttf",
+    "img": "/assets/fontspre/AvantGarde-Demi.png"
+  },
+  {
+    "name": "BacktoBlackDemo",
+    "type": "ttf",
+    "file": "/assets/fonts/BacktoBlackDemo.ttf",
+    "img": "/assets/fontspre/BacktoBlackDemo.png"
+  },
+  {
+    "name": "Bernadette",
+    "type": "ttf",
+    "file": "/assets/fonts/Bernadette.ttf",
+    "img": "/assets/fontspre/Bernadette.png"
+  },
+  {
+    "name": "Bestime",
+    "type": "ttf",
+    "file": "/assets/fonts/Bestime.ttf",
+    "img": "/assets/fontspre/Bestime.png"
+  },
+  {
+    "name": "BitBloxMonospaced",
+    "type": "ttf",
+    "file": "/assets/fonts/BitBloxMonospaced.ttf",
+    "img": "/assets/fontspre/BitBloxMonospaced.png"
+  },
+  {
+    "name": "BLACKJACK",
+    "type": "ttf",
+    "file": "/assets/fonts/BLACKJACK.ttf",
+    "img": "/assets/fontspre/BLACKJACK.png"
+  },
+  {
+    "name": "BlackOpsOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/BlackOpsOne-Regular.ttf",
+    "img": "/assets/fontspre/BlackOpsOne-Regular.png"
+  },
+  {
+    "name": "BM-DoHyeon",
+    "type": "ttf",
+    "file": "/assets/fonts/BM-DoHyeon.ttf",
+    "img": "/assets/fontspre/BM-DoHyeon.png"
+  },
+  {
+    "name": "brightooms",
+    "type": "ttf",
+    "file": "/assets/fonts/brightooms.ttf",
+    "img": "/assets/fontspre/brightooms.png"
+  },
+  {
+    "name": "BucheSerif",
+    "type": "ttf",
+    "file": "/assets/fonts/BucheSerif.ttf",
+    "img": "/assets/fontspre/BucheSerif.png"
+  },
+  {
+    "name": "Bungee-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Bungee-Regular.ttf",
+    "img": "/assets/fontspre/Bungee-Regular.png"
+  },
+  {
+    "name": "BungeeOutline-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/BungeeOutline-Regular.ttf",
+    "img": "/assets/fontspre/BungeeOutline-Regular.png"
+  },
+  {
+    "name": "BungeeShade-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/BungeeShade-Regular.ttf",
+    "img": "/assets/fontspre/BungeeShade-Regular.png"
+  },
+  {
+    "name": "CCUltimatumBold",
+    "type": "ttf",
+    "file": "/assets/fonts/CCUltimatumBold.ttf",
+    "img": "/assets/fontspre/CCUltimatumBold.png"
+  },
+  {
+    "name": "CCZoinksMedium",
+    "type": "ttf",
+    "file": "/assets/fonts/CCZoinksMedium.ttf",
+    "img": "/assets/fontspre/CCZoinksMedium.png"
+  },
+  {
+    "name": "CecepsHandwriting",
+    "type": "ttf",
+    "file": "/assets/fonts/CecepsHandwriting.ttf",
+    "img": "/assets/fontspre/CecepsHandwriting.png"
+  },
+  {
+    "name": "Cehua",
+    "type": "ttf",
+    "file": "/assets/fonts/Cehua.ttf",
+    "img": "/assets/fontspre/Cehua.png"
+  },
+  {
+    "name": "ChakraPetch-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-Bold.ttf",
+    "img": "/assets/fontspre/ChakraPetch-Bold.png"
+  },
+  {
+    "name": "ChakraPetch-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-BoldItalic.ttf",
+    "img": "/assets/fontspre/ChakraPetch-BoldItalic.png"
+  },
+  {
+    "name": "ChakraPetch-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-Italic.ttf",
+    "img": "/assets/fontspre/ChakraPetch-Italic.png"
+  },
+  {
+    "name": "ChakraPetch-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-Light.ttf",
+    "img": "/assets/fontspre/ChakraPetch-Light.png"
+  },
+  {
+    "name": "ChakraPetch-LightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-LightItalic.ttf",
+    "img": "/assets/fontspre/ChakraPetch-LightItalic.png"
+  },
+  {
+    "name": "ChakraPetch-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-Medium.ttf",
+    "img": "/assets/fontspre/ChakraPetch-Medium.png"
+  },
+  {
+    "name": "ChakraPetch-MediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-MediumItalic.ttf",
+    "img": "/assets/fontspre/ChakraPetch-MediumItalic.png"
+  },
+  {
+    "name": "ChakraPetch-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-Regular.ttf",
+    "img": "/assets/fontspre/ChakraPetch-Regular.png"
+  },
+  {
+    "name": "ChakraPetch-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-SemiBold.ttf",
+    "img": "/assets/fontspre/ChakraPetch-SemiBold.png"
+  },
+  {
+    "name": "ChakraPetch-SemiBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/ChakraPetch-SemiBoldItalic.ttf",
+    "img": "/assets/fontspre/ChakraPetch-SemiBoldItalic.png"
+  },
+  {
+    "name": "Chonburi-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Chonburi-Regular.ttf",
+    "img": "/assets/fontspre/Chonburi-Regular.png"
+  },
+  {
+    "name": "ChristmasTimePersonalUse",
+    "type": "ttf",
+    "file": "/assets/fonts/ChristmasTimePersonalUse.ttf",
+    "img": "/assets/fontspre/ChristmasTimePersonalUse.png"
+  },
+  {
+    "name": "ClickerScript-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/ClickerScript-Regular.ttf",
+    "img": "/assets/fontspre/ClickerScript-Regular.png"
+  },
+  {
+    "name": "ClickerScript",
+    "type": "ttf",
+    "file": "/assets/fonts/ClickerScript.ttf",
+    "img": "/assets/fontspre/ClickerScript.png"
+  },
+  {
+    "name": "Coiny-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Coiny-Regular.ttf",
+    "img": "/assets/fontspre/Coiny-Regular.png"
+  },
+  {
+    "name": "Comfortaa-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Comfortaa-Bold.ttf",
+    "img": "/assets/fontspre/Comfortaa-Bold.png"
+  },
+  {
+    "name": "Comfortaa-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/Comfortaa-Light.ttf",
+    "img": "/assets/fontspre/Comfortaa-Light.png"
+  },
+  {
+    "name": "Comfortaa-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Comfortaa-Medium.ttf",
+    "img": "/assets/fontspre/Comfortaa-Medium.png"
+  },
+  {
+    "name": "Comfortaa-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Comfortaa-Regular.ttf",
+    "img": "/assets/fontspre/Comfortaa-Regular.png"
+  },
+  {
+    "name": "Comfortaa-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/Comfortaa-SemiBold.ttf",
+    "img": "/assets/fontspre/Comfortaa-SemiBold.png"
+  },
+  {
+    "name": "ComicSansMS",
+    "type": "ttf",
+    "file": "/assets/fonts/ComicSansMS.ttf",
+    "img": "/assets/fontspre/ComicSansMS.png"
+  },
+  {
+    "name": "ComicSansMSBold",
+    "type": "ttf",
+    "file": "/assets/fonts/ComicSansMSBold.ttf",
+    "img": "/assets/fontspre/ComicSansMSBold.png"
+  },
+  {
+    "name": "ComicSansMSRegular",
+    "type": "ttf",
+    "file": "/assets/fonts/ComicSansMSRegular.ttf",
+    "img": "/assets/fontspre/ComicSansMSRegular.png"
+  },
+  {
+    "name": "Courgette-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Courgette-Regular.ttf",
+    "img": "/assets/fontspre/Courgette-Regular.png"
+  },
+  {
+    "name": "Creepster-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Creepster-Regular.ttf",
+    "img": "/assets/fontspre/Creepster-Regular.png"
+  },
+  {
+    "name": "CushingEF-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/CushingEF-BoldItalic.ttf",
+    "img": "/assets/fontspre/CushingEF-BoldItalic.png"
+  },
+  {
+    "name": "DancingScript-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/DancingScript-Regular.ttf",
+    "img": "/assets/fontspre/DancingScript-Regular.png"
+  },
+  {
+    "name": "Declara",
+    "type": "ttf",
+    "file": "/assets/fonts/Declara.ttf",
+    "img": "/assets/fontspre/Declara.png"
+  },
+  {
+    "name": "DiTulum",
+    "type": "ttf",
+    "file": "/assets/fonts/DiTulum.ttf",
+    "img": "/assets/fontspre/DiTulum.png"
+  },
+  {
+    "name": "E1234-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/E1234-Italic.ttf",
+    "img": "/assets/fontspre/E1234-Italic.png"
+  },
+  {
+    "name": "E1234-regular",
+    "type": "ttf",
+    "file": "/assets/fonts/E1234-regular.ttf",
+    "img": "/assets/fontspre/E1234-regular.png"
+  },
+  {
+    "name": "Eatday",
+    "type": "ttf",
+    "file": "/assets/fonts/Eatday.ttf",
+    "img": "/assets/fontspre/Eatday.png"
+  },
+  {
+    "name": "EdensorSerif",
+    "type": "ttf",
+    "file": "/assets/fonts/EdensorSerif.ttf",
+    "img": "/assets/fontspre/EdensorSerif.png"
+  },
+  {
+    "name": "Elastre",
+    "type": "ttf",
+    "file": "/assets/fonts/Elastre.ttf",
+    "img": "/assets/fontspre/Elastre.png"
+  },
+  {
+    "name": "Ezydraw",
+    "type": "ttf",
+    "file": "/assets/fonts/Ezydraw.ttf",
+    "img": "/assets/fontspre/Ezydraw.png"
+  },
+  {
+    "name": "Femeanly",
+    "type": "ttf",
+    "file": "/assets/fonts/Femeanly.ttf",
+    "img": "/assets/fontspre/Femeanly.png"
+  },
+  {
+    "name": "FINALOLD",
+    "type": "ttf",
+    "file": "/assets/fonts/FINALOLD.ttf",
+    "img": "/assets/fontspre/FINALOLD.png"
+  },
+  {
+    "name": "Folies-Bergere-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Folies-Bergere-Bold.ttf",
+    "img": "/assets/fontspre/Folies-Bergere-Bold.png"
+  },
+  {
+    "name": "Folies-Bergere-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Folies-Bergere-Medium.ttf",
+    "img": "/assets/fontspre/Folies-Bergere-Medium.png"
+  },
+  {
+    "name": "Folies-Bergere-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Folies-Bergere-Regular.ttf",
+    "img": "/assets/fontspre/Folies-Bergere-Regular.png"
+  },
+  {
+    "name": "Fonstars",
+    "type": "ttf",
+    "file": "/assets/fonts/Fonstars.ttf",
+    "img": "/assets/fontspre/Fonstars.png"
+  },
+  {
+    "name": "FrederickatheGreat-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/FrederickatheGreat-Regular.ttf",
+    "img": "/assets/fontspre/FrederickatheGreat-Regular.png"
+  },
+  {
+    "name": "FriedDuck",
+    "type": "ttf",
+    "file": "/assets/fonts/FriedDuck.ttf",
+    "img": "/assets/fontspre/FriedDuck.png"
+  },
+  {
+    "name": "Frijole-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Frijole-Regular.ttf",
+    "img": "/assets/fontspre/Frijole-Regular.png"
+  },
+  {
+    "name": "Fs-Pixel-Sans-Unicode-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Fs-Pixel-Sans-Unicode-Regular.ttf",
+    "img": "/assets/fontspre/Fs-Pixel-Sans-Unicode-Regular.png"
+  },
+  {
+    "name": "GameOfSquids",
+    "type": "ttf",
+    "file": "/assets/fonts/GameOfSquids.ttf",
+    "img": "/assets/fontspre/GameOfSquids.png"
+  },
+  {
+    "name": "GravitasOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/GravitasOne-Regular.ttf",
+    "img": "/assets/fontspre/GravitasOne-Regular.png"
+  },
+  {
+    "name": "GreatVibes-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/GreatVibes-Regular.ttf",
+    "img": "/assets/fontspre/GreatVibes-Regular.png"
+  },
+  {
+    "name": "GrechenFuemen-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/GrechenFuemen-Regular.ttf",
+    "img": "/assets/fontspre/GrechenFuemen-Regular.png"
+  },
+  {
+    "name": "HennyPenny-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/HennyPenny-Regular.ttf",
+    "img": "/assets/fontspre/HennyPenny-Regular.png"
+  },
+  {
+    "name": "Hokjesgeest",
+    "type": "ttf",
+    "file": "/assets/fonts/Hokjesgeest.ttf",
+    "img": "/assets/fontspre/Hokjesgeest.png"
+  },
+  {
+    "name": "Holyunion",
+    "type": "ttf",
+    "file": "/assets/fonts/Holyunion.ttf",
+    "img": "/assets/fontspre/Holyunion.png"
+  },
+  {
+    "name": "IBMPlexSans-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-Bold.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-Bold.png"
+  },
+  {
+    "name": "IBMPlexSans-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-BoldItalic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-BoldItalic.png"
+  },
+  {
+    "name": "IBMPlexSans-ExtraLight",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-ExtraLight.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-ExtraLight.png"
+  },
+  {
+    "name": "IBMPlexSans-ExtraLightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-ExtraLightItalic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-ExtraLightItalic.png"
+  },
+  {
+    "name": "IBMPlexSans-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-Italic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-Italic.png"
+  },
+  {
+    "name": "IBMPlexSans-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-Light.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-Light.png"
+  },
+  {
+    "name": "IBMPlexSans-LightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-LightItalic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-LightItalic.png"
+  },
+  {
+    "name": "IBMPlexSans-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-Medium.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-Medium.png"
+  },
+  {
+    "name": "IBMPlexSans-MediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-MediumItalic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-MediumItalic.png"
+  },
+  {
+    "name": "IBMPlexSans-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-Regular.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-Regular.png"
+  },
+  {
+    "name": "IBMPlexSans-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-SemiBold.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-SemiBold.png"
+  },
+  {
+    "name": "IBMPlexSans-SemiBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-SemiBoldItalic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-SemiBoldItalic.png"
+  },
+  {
+    "name": "IBMPlexSans-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-Thin.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-Thin.png"
+  },
+  {
+    "name": "IBMPlexSans-ThinItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/IBMPlexSans-ThinItalic.ttf",
+    "img": "/assets/fontspre/IBMPlexSans-ThinItalic.png"
+  },
+  {
+    "name": "ID-Gettie-Heavy",
+    "type": "ttf",
+    "file": "/assets/fonts/ID-Gettie-Heavy.ttf",
+    "img": "/assets/fontspre/ID-Gettie-Heavy.png"
+  },
+  {
+    "name": "InLivingColor",
+    "type": "ttf",
+    "file": "/assets/fonts/InLivingColor.ttf",
+    "img": "/assets/fontspre/InLivingColor.png"
+  },
+  {
+    "name": "Inter-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-Black.ttf",
+    "img": "/assets/fontspre/Inter-Black.png"
+  },
+  {
+    "name": "Inter-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-Bold.ttf",
+    "img": "/assets/fontspre/Inter-Bold.png"
+  },
+  {
+    "name": "Inter-ExtraBold",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-ExtraBold.ttf",
+    "img": "/assets/fontspre/Inter-ExtraBold.png"
+  },
+  {
+    "name": "Inter-ExtraLight",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-ExtraLight.ttf",
+    "img": "/assets/fontspre/Inter-ExtraLight.png"
+  },
+  {
+    "name": "Inter-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-Light.ttf",
+    "img": "/assets/fontspre/Inter-Light.png"
+  },
+  {
+    "name": "Inter-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-Medium.ttf",
+    "img": "/assets/fontspre/Inter-Medium.png"
+  },
+  {
+    "name": "Inter-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-Regular.ttf",
+    "img": "/assets/fontspre/Inter-Regular.png"
+  },
+  {
+    "name": "Inter-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-SemiBold.ttf",
+    "img": "/assets/fontspre/Inter-SemiBold.png"
+  },
+  {
+    "name": "Inter-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/Inter-Thin.ttf",
+    "img": "/assets/fontspre/Inter-Thin.png"
+  },
+  {
+    "name": "Kablammo-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Kablammo-Regular.ttf",
+    "img": "/assets/fontspre/Kablammo-Regular.png"
+  },
+  {
+    "name": "KellySlab-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/KellySlab-Regular.ttf",
+    "img": "/assets/fontspre/KellySlab-Regular.png"
+  },
+  {
+    "name": "LCDStdRegular",
+    "type": "ttf",
+    "file": "/assets/fonts/LCDStdRegular.ttf",
+    "img": "/assets/fontspre/LCDStdRegular.png"
+  },
+  {
+    "name": "Limelight-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Limelight-Regular.ttf",
+    "img": "/assets/fontspre/Limelight-Regular.png"
+  },
+  {
+    "name": "Lobster-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Lobster-Regular.ttf",
+    "img": "/assets/fontspre/Lobster-Regular.png"
+  },
+  {
+    "name": "Lora-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-Bold.ttf",
+    "img": "/assets/fontspre/Lora-Bold.png"
+  },
+  {
+    "name": "Lora-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-BoldItalic.ttf",
+    "img": "/assets/fontspre/Lora-BoldItalic.png"
+  },
+  {
+    "name": "Lora-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-Italic.ttf",
+    "img": "/assets/fontspre/Lora-Italic.png"
+  },
+  {
+    "name": "Lora-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-Medium.ttf",
+    "img": "/assets/fontspre/Lora-Medium.png"
+  },
+  {
+    "name": "Lora-MediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-MediumItalic.ttf",
+    "img": "/assets/fontspre/Lora-MediumItalic.png"
+  },
+  {
+    "name": "Lora-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-Regular.ttf",
+    "img": "/assets/fontspre/Lora-Regular.png"
+  },
+  {
+    "name": "Lora-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-SemiBold.ttf",
+    "img": "/assets/fontspre/Lora-SemiBold.png"
+  },
+  {
+    "name": "Lora-SemiBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Lora-SemiBoldItalic.ttf",
+    "img": "/assets/fontspre/Lora-SemiBoldItalic.png"
+  },
+  {
+    "name": "LucidaHandwriting",
+    "type": "ttf",
+    "file": "/assets/fonts/LucidaHandwriting.ttf",
+    "img": "/assets/fontspre/LucidaHandwriting.png"
+  },
+  {
+    "name": "MAAXROUNDEDBOLD",
+    "type": "ttf",
+    "file": "/assets/fonts/MAAXROUNDEDBOLD.ttf",
+    "img": "/assets/fontspre/MAAXROUNDEDBOLD.png"
+  },
+  {
+    "name": "Manils",
+    "type": "ttf",
+    "file": "/assets/fonts/Manils.ttf",
+    "img": "/assets/fontspre/Manils.png"
+  },
+  {
+    "name": "Masiku",
+    "type": "ttf",
+    "file": "/assets/fonts/Masiku.ttf",
+    "img": "/assets/fontspre/Masiku.png"
+  },
+  {
+    "name": "MetalMania-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/MetalMania-Regular.ttf",
+    "img": "/assets/fontspre/MetalMania-Regular.png"
+  },
+  {
+    "name": "Miltonian-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Miltonian-Regular.ttf",
+    "img": "/assets/fontspre/Miltonian-Regular.png"
+  },
+  {
+    "name": "Mistral-SingleLine",
+    "type": "ttf",
+    "file": "/assets/fonts/Mistral-SingleLine.ttf",
+    "img": "/assets/fontspre/Mistral-SingleLine.png"
+  },
+  {
+    "name": "MoiraiOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/MoiraiOne-Regular.ttf",
+    "img": "/assets/fontspre/MoiraiOne-Regular.png"
+  },
+  {
+    "name": "Molle-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/Molle-Italic.ttf",
+    "img": "/assets/fontspre/Molle-Italic.png"
+  },
+  {
+    "name": "Monoton-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Monoton-Regular.ttf",
+    "img": "/assets/fontspre/Monoton-Regular.png"
+  },
+  {
+    "name": "MontserratBlack",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratBlack.ttf",
+    "img": "/assets/fontspre/MontserratBlack.png"
+  },
+  {
+    "name": "MontserratBlackItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratBlackItalic.ttf",
+    "img": "/assets/fontspre/MontserratBlackItalic.png"
+  },
+  {
+    "name": "MontserratBold",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratBold.ttf",
+    "img": "/assets/fontspre/MontserratBold.png"
+  },
+  {
+    "name": "MontserratBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratBoldItalic.ttf",
+    "img": "/assets/fontspre/MontserratBoldItalic.png"
+  },
+  {
+    "name": "MontserratExtrabold",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratExtrabold.ttf",
+    "img": "/assets/fontspre/MontserratExtrabold.png"
+  },
+  {
+    "name": "MontserratExtraboldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratExtraboldItalic.ttf",
+    "img": "/assets/fontspre/MontserratExtraboldItalic.png"
+  },
+  {
+    "name": "MontserratExtralight",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratExtralight.ttf",
+    "img": "/assets/fontspre/MontserratExtralight.png"
+  },
+  {
+    "name": "MontserratExtralightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratExtralightItalic.ttf",
+    "img": "/assets/fontspre/MontserratExtralightItalic.png"
+  },
+  {
+    "name": "MontserratItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratItalic.ttf",
+    "img": "/assets/fontspre/MontserratItalic.png"
+  },
+  {
+    "name": "MontserratLight",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratLight.ttf",
+    "img": "/assets/fontspre/MontserratLight.png"
+  },
+  {
+    "name": "MontserratLightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratLightItalic.ttf",
+    "img": "/assets/fontspre/MontserratLightItalic.png"
+  },
+  {
+    "name": "MontserratMedium",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratMedium.ttf",
+    "img": "/assets/fontspre/MontserratMedium.png"
+  },
+  {
+    "name": "MontserratMediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratMediumItalic.ttf",
+    "img": "/assets/fontspre/MontserratMediumItalic.png"
+  },
+  {
+    "name": "MontserratRegular",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratRegular.ttf",
+    "img": "/assets/fontspre/MontserratRegular.png"
+  },
+  {
+    "name": "MontserratSemibold",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratSemibold.ttf",
+    "img": "/assets/fontspre/MontserratSemibold.png"
+  },
+  {
+    "name": "MontserratSemiboldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratSemiboldItalic.ttf",
+    "img": "/assets/fontspre/MontserratSemiboldItalic.png"
+  },
+  {
+    "name": "MontserratThin",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratThin.ttf",
+    "img": "/assets/fontspre/MontserratThin.png"
+  },
+  {
+    "name": "MontserratThinItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/MontserratThinItalic.ttf",
+    "img": "/assets/fontspre/MontserratThinItalic.png"
+  },
+  {
+    "name": "Moodcake",
+    "type": "ttf",
+    "file": "/assets/fonts/Moodcake.ttf",
+    "img": "/assets/fontspre/Moodcake.png"
+  },
+  {
+    "name": "MusubiBlack",
+    "type": "ttf",
+    "file": "/assets/fonts/MusubiBlack.ttf",
+    "img": "/assets/fontspre/MusubiBlack.png"
+  },
+  {
+    "name": "Nasalization-rg",
+    "type": "ttf",
+    "file": "/assets/fonts/Nasalization-rg.ttf",
+    "img": "/assets/fontspre/Nasalization-rg.png"
+  },
+  {
+    "name": "Neonderthaw-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Neonderthaw-Regular.ttf",
+    "img": "/assets/fontspre/Neonderthaw-Regular.png"
+  },
+  {
+    "name": "NeonSans",
+    "type": "ttf",
+    "file": "/assets/fonts/NeonSans.ttf",
+    "img": "/assets/fontspre/NeonSans.png"
+  },
+  {
+    "name": "NewSushi",
+    "type": "ttf",
+    "file": "/assets/fonts/NewSushi.ttf",
+    "img": "/assets/fontspre/NewSushi.png"
+  },
+  {
+    "name": "NexaScript-Free",
+    "type": "ttf",
+    "file": "/assets/fonts/NexaScript-Free.ttf",
+    "img": "/assets/fontspre/NexaScript-Free.png"
+  },
+  {
+    "name": "Nosifer-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Nosifer-Regular.ttf",
+    "img": "/assets/fontspre/Nosifer-Regular.png"
+  },
+  {
+    "name": "NotoSerif-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Black.ttf",
+    "img": "/assets/fontspre/NotoSerif-Black.png"
+  },
+  {
+    "name": "NotoSerif-BlackItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-BlackItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-BlackItalic.png"
+  },
+  {
+    "name": "NotoSerif-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Bold.ttf",
+    "img": "/assets/fontspre/NotoSerif-Bold.png"
+  },
+  {
+    "name": "NotoSerif-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-BoldItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-BoldItalic.png"
+  },
+  {
+    "name": "NotoSerif-ExtraBold",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-ExtraBold.ttf",
+    "img": "/assets/fontspre/NotoSerif-ExtraBold.png"
+  },
+  {
+    "name": "NotoSerif-ExtraBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-ExtraBoldItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-ExtraBoldItalic.png"
+  },
+  {
+    "name": "NotoSerif-ExtraLight",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-ExtraLight.ttf",
+    "img": "/assets/fontspre/NotoSerif-ExtraLight.png"
+  },
+  {
+    "name": "NotoSerif-ExtraLightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-ExtraLightItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-ExtraLightItalic.png"
+  },
+  {
+    "name": "NotoSerif-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Italic.ttf",
+    "img": "/assets/fontspre/NotoSerif-Italic.png"
+  },
+  {
+    "name": "NotoSerif-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Light.ttf",
+    "img": "/assets/fontspre/NotoSerif-Light.png"
+  },
+  {
+    "name": "NotoSerif-LightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-LightItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-LightItalic.png"
+  },
+  {
+    "name": "NotoSerif-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Medium.ttf",
+    "img": "/assets/fontspre/NotoSerif-Medium.png"
+  },
+  {
+    "name": "NotoSerif-MediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-MediumItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-MediumItalic.png"
+  },
+  {
+    "name": "NotoSerif-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Regular.ttf",
+    "img": "/assets/fontspre/NotoSerif-Regular.png"
+  },
+  {
+    "name": "NotoSerif-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-SemiBold.ttf",
+    "img": "/assets/fontspre/NotoSerif-SemiBold.png"
+  },
+  {
+    "name": "NotoSerif-SemiBoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-SemiBoldItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-SemiBoldItalic.png"
+  },
+  {
+    "name": "NotoSerif-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-Thin.ttf",
+    "img": "/assets/fontspre/NotoSerif-Thin.png"
+  },
+  {
+    "name": "NotoSerif-ThinItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/NotoSerif-ThinItalic.ttf",
+    "img": "/assets/fontspre/NotoSerif-ThinItalic.png"
+  },
+  {
+    "name": "Offenbach",
+    "type": "ttf",
+    "file": "/assets/fonts/Offenbach.ttf",
+    "img": "/assets/fontspre/Offenbach.png"
+  },
+  {
+    "name": "Ontel",
+    "type": "ttf",
+    "file": "/assets/fonts/Ontel.ttf",
+    "img": "/assets/fontspre/Ontel.png"
+  },
+  {
+    "name": "Orbix",
+    "type": "ttf",
+    "file": "/assets/fonts/Orbix.ttf",
+    "img": "/assets/fontspre/Orbix.png"
+  },
+  {
+    "name": "Outfit-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-Black.ttf",
+    "img": "/assets/fontspre/Outfit-Black.png"
+  },
+  {
+    "name": "Outfit-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-Bold.ttf",
+    "img": "/assets/fontspre/Outfit-Bold.png"
+  },
+  {
+    "name": "Outfit-ExtraBold",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-ExtraBold.ttf",
+    "img": "/assets/fontspre/Outfit-ExtraBold.png"
+  },
+  {
+    "name": "Outfit-ExtraLight",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-ExtraLight.ttf",
+    "img": "/assets/fontspre/Outfit-ExtraLight.png"
+  },
+  {
+    "name": "Outfit-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-Light.ttf",
+    "img": "/assets/fontspre/Outfit-Light.png"
+  },
+  {
+    "name": "Outfit-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-Medium.ttf",
+    "img": "/assets/fontspre/Outfit-Medium.png"
+  },
+  {
+    "name": "Outfit-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-Regular.ttf",
+    "img": "/assets/fontspre/Outfit-Regular.png"
+  },
+  {
+    "name": "Outfit-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-SemiBold.ttf",
+    "img": "/assets/fontspre/Outfit-SemiBold.png"
+  },
+  {
+    "name": "Outfit-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/Outfit-Thin.ttf",
+    "img": "/assets/fontspre/Outfit-Thin.png"
+  },
+  {
+    "name": "Pacifico",
+    "type": "ttf",
+    "file": "/assets/fonts/Pacifico.ttf",
+    "img": "/assets/fontspre/Pacifico.png"
+  },
+  {
+    "name": "Paperkind",
+    "type": "ttf",
+    "file": "/assets/fonts/Paperkind.ttf",
+    "img": "/assets/fontspre/Paperkind.png"
+  },
+  {
+    "name": "Parisienne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Parisienne-Regular.ttf",
+    "img": "/assets/fontspre/Parisienne-Regular.png"
+  },
+  {
+    "name": "PermanentMarker-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/PermanentMarker-Regular.ttf",
+    "img": "/assets/fontspre/PermanentMarker-Regular.png"
+  },
+  {
+    "name": "PioneerITC",
+    "type": "ttf",
+    "file": "/assets/fonts/PioneerITC.ttf",
+    "img": "/assets/fontspre/PioneerITC.png"
+  },
+  {
+    "name": "Plaster-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Plaster-Regular.ttf",
+    "img": "/assets/fontspre/Plaster-Regular.png"
+  },
+  {
+    "name": "Playball-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Playball-Regular.ttf",
+    "img": "/assets/fontspre/Playball-Regular.png"
+  },
+  {
+    "name": "Postbook",
+    "type": "ttf",
+    "file": "/assets/fonts/Postbook.ttf",
+    "img": "/assets/fontspre/Postbook.png"
+  },
+  {
+    "name": "PressStart2P-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/PressStart2P-Regular.ttf",
+    "img": "/assets/fontspre/PressStart2P-Regular.png"
+  },
+  {
+    "name": "PublicPixel",
+    "type": "ttf",
+    "file": "/assets/fonts/PublicPixel.ttf",
+    "img": "/assets/fontspre/PublicPixel.png"
+  },
+  {
+    "name": "Puffy",
+    "type": "ttf",
+    "file": "/assets/fonts/Puffy.ttf",
+    "img": "/assets/fontspre/Puffy.png"
+  },
+  {
+    "name": "Quadrat-serial-medium-regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Quadrat-serial-medium-regular.ttf",
+    "img": "/assets/fontspre/Quadrat-serial-medium-regular.png"
+  },
+  {
+    "name": "RacingSansOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/RacingSansOne-Regular.ttf",
+    "img": "/assets/fontspre/RacingSansOne-Regular.png"
+  },
+  {
+    "name": "RampartOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/RampartOne-Regular.ttf",
+    "img": "/assets/fontspre/RampartOne-Regular.png"
+  },
+  {
+    "name": "RepublikSansICG03Alt",
+    "type": "ttf",
+    "file": "/assets/fonts/RepublikSansICG03Alt.ttf",
+    "img": "/assets/fontspre/RepublikSansICG03Alt.png"
+  },
+  {
+    "name": "Resta",
+    "type": "ttf",
+    "file": "/assets/fonts/Resta.ttf",
+    "img": "/assets/fontspre/Resta.png"
+  },
+  {
+    "name": "Roboto-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Black.ttf",
+    "img": "/assets/fontspre/Roboto-Black.png"
+  },
+  {
+    "name": "Roboto-BlackItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-BlackItalic.ttf",
+    "img": "/assets/fontspre/Roboto-BlackItalic.png"
+  },
+  {
+    "name": "Roboto-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Bold.ttf",
+    "img": "/assets/fontspre/Roboto-Bold.png"
+  },
+  {
+    "name": "Roboto-BoldItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-BoldItalic.ttf",
+    "img": "/assets/fontspre/Roboto-BoldItalic.png"
+  },
+  {
+    "name": "Roboto-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Italic.ttf",
+    "img": "/assets/fontspre/Roboto-Italic.png"
+  },
+  {
+    "name": "Roboto-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Light.ttf",
+    "img": "/assets/fontspre/Roboto-Light.png"
+  },
+  {
+    "name": "Roboto-LightItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-LightItalic.ttf",
+    "img": "/assets/fontspre/Roboto-LightItalic.png"
+  },
+  {
+    "name": "Roboto-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Medium.ttf",
+    "img": "/assets/fontspre/Roboto-Medium.png"
+  },
+  {
+    "name": "Roboto-MediumItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-MediumItalic.ttf",
+    "img": "/assets/fontspre/Roboto-MediumItalic.png"
+  },
+  {
+    "name": "Roboto-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Regular.ttf",
+    "img": "/assets/fontspre/Roboto-Regular.png"
+  },
+  {
+    "name": "Roboto-Thin",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-Thin.ttf",
+    "img": "/assets/fontspre/Roboto-Thin.png"
+  },
+  {
+    "name": "Roboto-ThinItalic",
+    "type": "ttf",
+    "file": "/assets/fonts/Roboto-ThinItalic.ttf",
+    "img": "/assets/fontspre/Roboto-ThinItalic.png"
+  },
+  {
+    "name": "RubikMoonrocks-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/RubikMoonrocks-Regular.ttf",
+    "img": "/assets/fontspre/RubikMoonrocks-Regular.png"
+  },
+  {
+    "name": "Rye-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Rye-Regular.ttf",
+    "img": "/assets/fontspre/Rye-Regular.png"
+  },
+  {
+    "name": "SansitaSwashed-Black",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-Black.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-Black.png"
+  },
+  {
+    "name": "SansitaSwashed-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-Bold.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-Bold.png"
+  },
+  {
+    "name": "SansitaSwashed-ExtraBold",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-ExtraBold.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-ExtraBold.png"
+  },
+  {
+    "name": "SansitaSwashed-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-Light.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-Light.png"
+  },
+  {
+    "name": "SansitaSwashed-Medium",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-Medium.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-Medium.png"
+  },
+  {
+    "name": "SansitaSwashed-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-Regular.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-Regular.png"
+  },
+  {
+    "name": "SansitaSwashed-SemiBold",
+    "type": "ttf",
+    "file": "/assets/fonts/SansitaSwashed-SemiBold.ttf",
+    "img": "/assets/fontspre/SansitaSwashed-SemiBold.png"
+  },
+  {
+    "name": "SenjaSantuy",
+    "type": "ttf",
+    "file": "/assets/fonts/SenjaSantuy.ttf",
+    "img": "/assets/fontspre/SenjaSantuy.png"
+  },
+  {
+    "name": "Shout-Space",
+    "type": "ttf",
+    "file": "/assets/fonts/Shout-Space.ttf",
+    "img": "/assets/fontspre/Shout-Space.png"
+  },
+  {
+    "name": "SilverFalcon",
+    "type": "ttf",
+    "file": "/assets/fonts/SilverFalcon.ttf",
+    "img": "/assets/fontspre/SilverFalcon.png"
+  },
+  {
+    "name": "SlacksideOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/SlacksideOne-Regular.ttf",
+    "img": "/assets/fontspre/SlacksideOne-Regular.png"
+  },
+  {
+    "name": "Splash-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Splash-Regular.ttf",
+    "img": "/assets/fontspre/Splash-Regular.png"
+  },
+  {
+    "name": "SportyProShadowInlineCD",
+    "type": "ttf",
+    "file": "/assets/fonts/SportyProShadowInlineCD.ttf",
+    "img": "/assets/fontspre/SportyProShadowInlineCD.png"
+  },
+  {
+    "name": "SundayBurger",
+    "type": "ttf",
+    "file": "/assets/fonts/SundayBurger.ttf",
+    "img": "/assets/fontspre/SundayBurger.png"
+  },
+  {
+    "name": "SunValleyRegular",
+    "type": "ttf",
+    "file": "/assets/fonts/SunValleyRegular.ttf",
+    "img": "/assets/fontspre/SunValleyRegular.png"
+  },
+  {
+    "name": "SuperBoys",
+    "type": "ttf",
+    "file": "/assets/fonts/SuperBoys.ttf",
+    "img": "/assets/fontspre/SuperBoys.png"
+  },
+  {
+    "name": "Tagesschrift",
+    "type": "ttf",
+    "file": "/assets/fonts/Tagesschrift.ttf",
+    "img": "/assets/fontspre/Tagesschrift.png"
+  },
+  {
+    "name": "TakeCoffee",
+    "type": "ttf",
+    "file": "/assets/fonts/TakeCoffee.ttf",
+    "img": "/assets/fontspre/TakeCoffee.png"
+  },
+  {
+    "name": "Testimonia",
+    "type": "ttf",
+    "file": "/assets/fonts/Testimonia.ttf",
+    "img": "/assets/fontspre/Testimonia.png"
+  },
+  {
+    "name": "TheBeast",
+    "type": "ttf",
+    "file": "/assets/fonts/TheBeast.ttf",
+    "img": "/assets/fontspre/TheBeast.png"
+  },
+  {
+    "name": "ThirdStreet-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/ThirdStreet-Bold.ttf",
+    "img": "/assets/fontspre/ThirdStreet-Bold.png"
+  },
+  {
+    "name": "ThirdStreet-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/ThirdStreet-Regular.ttf",
+    "img": "/assets/fontspre/ThirdStreet-Regular.png"
+  },
+  {
+    "name": "TimesNewRoman",
+    "type": "ttf",
+    "file": "/assets/fonts/TimesNewRoman.ttf",
+    "img": "/assets/fontspre/TimesNewRoman.png"
+  },
+  {
+    "name": "Tourney-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/Tourney-Italic.ttf",
+    "img": "/assets/fontspre/Tourney-Italic.png"
+  },
+  {
+    "name": "Tourney-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Tourney-Regular.ttf",
+    "img": "/assets/fontspre/Tourney-Regular.png"
+  },
+  {
+    "name": "TrainOne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/TrainOne-Regular.ttf",
+    "img": "/assets/fontspre/TrainOne-Regular.png"
+  },
+  {
+    "name": "Unifix-SP-Demo",
+    "type": "ttf",
+    "file": "/assets/fonts/Unifix-SP-Demo.ttf",
+    "img": "/assets/fontspre/Unifix-SP-Demo.png"
+  },
+  {
+    "name": "UnifrakturCook-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/UnifrakturCook-Bold.ttf",
+    "img": "/assets/fontspre/UnifrakturCook-Bold.png"
+  },
+  {
+    "name": "UnifrakturMaguntia-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/UnifrakturMaguntia-Regular.ttf",
+    "img": "/assets/fontspre/UnifrakturMaguntia-Regular.png"
+  },
+  {
+    "name": "UnioneForceStencil-Yzgwo",
+    "type": "ttf",
+    "file": "/assets/fonts/UnioneForceStencil-Yzgwo.ttf",
+    "img": "/assets/fontspre/UnioneForceStencil-Yzgwo.png"
+  },
+  {
+    "name": "Varsity-Team-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Varsity-Team-Bold.ttf",
+    "img": "/assets/fontspre/Varsity-Team-Bold.png"
+  },
+  {
+    "name": "VastShadow-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/VastShadow-Regular.ttf",
+    "img": "/assets/fontspre/VastShadow-Regular.png"
+  },
+  {
+    "name": "Velvelyne-Bold",
+    "type": "ttf",
+    "file": "/assets/fonts/Velvelyne-Bold.ttf",
+    "img": "/assets/fontspre/Velvelyne-Bold.png"
+  },
+  {
+    "name": "Velvelyne-Book",
+    "type": "ttf",
+    "file": "/assets/fonts/Velvelyne-Book.ttf",
+    "img": "/assets/fontspre/Velvelyne-Book.png"
+  },
+  {
+    "name": "Velvelyne-Light",
+    "type": "ttf",
+    "file": "/assets/fonts/Velvelyne-Light.ttf",
+    "img": "/assets/fontspre/Velvelyne-Light.png"
+  },
+  {
+    "name": "Velvelyne-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Velvelyne-Regular.ttf",
+    "img": "/assets/fontspre/Velvelyne-Regular.png"
+  },
+  {
+    "name": "Wallpoet-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Wallpoet-Regular.ttf",
+    "img": "/assets/fontspre/Wallpoet-Regular.png"
+  },
+  {
+    "name": "Wanders",
+    "type": "ttf",
+    "file": "/assets/fonts/Wanders.ttf",
+    "img": "/assets/fontspre/Wanders.png"
+  },
+  {
+    "name": "WaterBrush-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/WaterBrush-Regular.ttf",
+    "img": "/assets/fontspre/WaterBrush-Regular.png"
+  },
+  {
+    "name": "Waytoon",
+    "type": "ttf",
+    "file": "/assets/fonts/Waytoon.ttf",
+    "img": "/assets/fontspre/Waytoon.png"
+  },
+  {
+    "name": "Worktalk",
+    "type": "ttf",
+    "file": "/assets/fonts/Worktalk.ttf",
+    "img": "/assets/fontspre/Worktalk.png"
+  },
+  {
+    "name": "XCompany-Italic",
+    "type": "ttf",
+    "file": "/assets/fonts/XCompany-Italic.ttf",
+    "img": "/assets/fontspre/XCompany-Italic.png"
+  },
+  {
+    "name": "XCompany-regular",
+    "type": "ttf",
+    "file": "/assets/fonts/XCompany-regular.ttf",
+    "img": "/assets/fontspre/XCompany-regular.png"
+  },
+  {
+    "name": "Yellowtail-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Yellowtail-Regular.ttf",
+    "img": "/assets/fontspre/Yellowtail-Regular.png"
+  },
+  {
+    "name": "Zaptron-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Zaptron-Regular.ttf",
+    "img": "/assets/fontspre/Zaptron-Regular.png"
+  },
+  {
+    "name": "Zyzol-Outline",
+    "type": "ttf",
+    "file": "/assets/fonts/Zyzol-Outline.ttf",
+    "img": "/assets/fontspre/Zyzol-Outline.png"
+  },
+  {
+    "name": "Zyzol-Regular",
+    "type": "ttf",
+    "file": "/assets/fonts/Zyzol-Regular.ttf",
+    "img": "/assets/fontspre/Zyzol-Regular.png"
+  },
+  {
+    "name": "Zyzol-Round",
+    "type": "ttf",
+    "file": "/assets/fonts/Zyzol-Round.ttf",
+    "img": "/assets/fontspre/Zyzol-Round.png"
+  },
+  {
+    "name": "Zyzol-Shadow",
+    "type": "ttf",
+    "file": "/assets/fonts/Zyzol-Shadow.ttf",
+    "img": "/assets/fontspre/Zyzol-Shadow.png"
+  }
+]
