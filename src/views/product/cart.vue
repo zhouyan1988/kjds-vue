@@ -556,7 +556,6 @@
                   <span :id="'message' + item.id_design_option" style="color: red; display: none">This is a required field.</span>
                 </div>
               </div>
-
               <!--规格 Start-->
               <div class="product-variants">
                 <template v-for="(group, key) in groupsAttr.groups">
