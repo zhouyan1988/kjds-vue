@@ -17,7 +17,7 @@
           </ul>
         </div>
       </el-col>
-      <!-- 右侧 -->
+      <!-- 右侧 gaixia -->
       <el-col :xl="10" :lg="10" :md="10" :sm="10" :xs="24">
         <div ref="productInfoRef" class="product-information">
           <div class="title-row">
