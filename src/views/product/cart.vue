@@ -987,6 +987,7 @@ const getProductData = async () => {
     productImgs.value = data?.images;
 
     handleCarousel(0);
+    sendProductDescToParent();
   } catch (error) {
     showError();
   }
@@ -1189,6 +1190,15 @@ const calcPrice = () => {
     designOptionTotalPrice.value = parseFloat(totalPrice.toFixed(2));
   });
 };
+
+const sendProductDescToParent = () => {
+  if (!productData.value?.description) return;
+  iframeParent.postMessage({
+    type: 'setProductDesc',
+    html: productData.value.description
+  }, '*');
+};
+
 
 /**
  * 截取name，超出追加...
