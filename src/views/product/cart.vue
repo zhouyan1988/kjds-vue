@@ -1206,7 +1206,6 @@ const getName = (name: string): string => {
   }
   return '';
 };
-
 const productInfoRef = ref<HTMLElement | null>(null);
 const iframeParent = window.parent;
 let resizeObserver: ResizeObserver | null = null;
