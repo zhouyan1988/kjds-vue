@@ -1,5 +1,5 @@
 <template>
-  <div class="l-cart-box goodjob">
+  <div class="l-cart-box">
     <el-row :gutter="44">
       <el-col :xl="14" :lg="14" :md="14" :sm="14" :xs="24">
         <div ref="carouselRef" v-loading="loading" class="l-cart-carousel main-image" element-loading-background="rgba(255, 255, 255, 1)">
