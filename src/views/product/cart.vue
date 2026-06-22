@@ -1,5 +1,5 @@
 <template>
-  <div class="l-cart-box">
+  <div class="l-cart-box goodjob">
     <el-row :gutter="44">
       <el-col :xl="14" :lg="14" :md="14" :sm="14" :xs="24">
         <div ref="carouselRef" v-loading="loading" class="l-cart-carousel main-image" element-loading-background="rgba(255, 255, 255, 1)">
@@ -19,7 +19,11 @@
       </el-col>
       <!-- 右侧 我试试 git add gunba .的 -->
       <el-col :xl="10" :lg="10" :md="10" :sm="10" :xs="24">
-        <div ref="productInfoRef" class="product-information vvvvvv滚吧12345八嘎 哥哥好，哥哥美如画">
+<<<<<<< HEAD
+        <div ref="productInfoRef" class="product-information vvvvvv滚吧12345八嘎 哥哥好，哥哥美如画123">
+=======
+        <div ref="productInfoRef" class="product-information">
+>>>>>>> 3ec69fda75c7b11eb9ac2fcfe06abff422fb241e
           <div class="title-row">
             <h1 class="product-title">{{ productData.name }}</h1>
           </div>
@@ -1206,7 +1210,6 @@ const getName = (name: string): string => {
   }
   return '';
 };
-
 const productInfoRef = ref<HTMLElement | null>(null);
 const iframeParent = window.parent;
 let resizeObserver: ResizeObserver | null = null;
