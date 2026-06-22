@@ -543,7 +543,6 @@
                   <div v-else-if="item.id_design_option_types === '16'" :id="'detail_' + item.id_design_option">
                     <div></div>
                   </div>
-
                   <span
                     v-if="
                       item.id_design_option_types !== '13' && item.id_design_option_types !== '14' && item.help_text && item.help_text_position === 1
