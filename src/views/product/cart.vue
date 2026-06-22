@@ -19,7 +19,7 @@
       </el-col>
       <!-- 右侧 我试试 git add gunba .的 -->
       <el-col :xl="10" :lg="10" :md="10" :sm="10" :xs="24">
-        <div ref="productInfoRef" class="product-information vvvvvv滚吧12345">
+        <div ref="productInfoRef" class="product-information vvvvvv滚吧12345八嘎">
           <div class="title-row">
             <h1 class="product-title">{{ productData.name }}</h1>
           </div>
