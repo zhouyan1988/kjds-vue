@@ -1197,7 +1197,6 @@ const sendProductDescToParent = () => {
   }, '*');
 };
 
-
 /**
  * 截取name，超出追加...
  */
