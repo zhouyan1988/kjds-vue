@@ -366,11 +366,11 @@ export const handlePrice = (product: CategoryProductDataVO, attr: AttribugesGrou
       }
     }
   }
-  let price = 0;
+  let price = product.current_price;
   for (const combinationsKey in attr?.combinations) {
     const combination: TheChild = attr?.combinations[combinationsKey];
     if (combination?.attributes?.join(',') == selectedAttr?.join(',')) {
-      price = combination.price;
+      price += combination.price;
       break;
     }
   }
@@ -389,9 +389,9 @@ export const handlePrice = (product: CategoryProductDataVO, attr: AttribugesGrou
     }
   }
   const pricePrefix = getPricePrefix(currency);
-  /**
+
   product.price = pricePrefix + totalPrice;
-  */
+
 };
 
 export const getPricePrefix = (type: string) => {
