@@ -344,7 +344,7 @@ export class FabricCanvasEditor {
    * 设置画布对象
    * @param objs
    */
-  public async setCanvasByObjects(objs: FabricObjectVO[]) {
+  public async setCanvasByObjectsold(objs: FabricObjectVO[]) {
     if (!objs?.length) {
       console.error('setCanvasByObjects objs is empty');
       return;
@@ -373,6 +373,41 @@ export class FabricCanvasEditor {
       }
     }
   }
+
+  public async setCanvasByObjects(objs: FabricObjectVO[]) {
+  if (!objs?.length) {
+    console.error('setCanvasByObjects objs is empty');
+    return;
+  }
+  const _this = this;
+  _this.templJsonObjects = objs;
+  _this._fabricCondition.setObjects(objs);
+
+  // 并发处理所有图层对象
+  const tasks = objs.map(async (item: FabricObjectVO) => {
+    try {
+      if (item.type === EditorTypeEnum.Image) {
+        await _this.imageUtils.addImage(item);
+      } else if (item.type === EditorTypeEnum.IText) {
+        if (item.path) {
+          await _this.pathTextUtils.addPathText(item);
+        } else {
+          await _this.textUtils.addText(item);
+        }
+      } else if (item.type === EditorTypeEnum.TextBox) {
+        await _this.textUtils.addTextbox(item);
+      }
+    } catch (error) {
+      console.error(`设置图层对象错误 ${item.id}:`, error);
+      throw new Error(`设置图层对象错误 ${item.id}`);
+    }
+  });
+
+  await Promise.all(tasks);
+
+  // 所有对象添加完成后，一次性渲染
+  _this.requestRender();
+}
 
   /**
    * 清除画布实例

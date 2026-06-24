@@ -35,7 +35,53 @@ export class FabricImageUtils {
    * 添加图片
    * @param obj
    */
+
   public addImage(obj: FabricObjectVO) {
+  const _this = this;
+  obj = cloneData(obj);
+  const isRender: boolean = _this.isCanRenderTempl(obj);
+  _this.clearImage(obj.id, obj.type);
+
+  return new Promise(async (resolve, reject) => {
+    try {
+      fabric.Image.fromURL(
+        obj.src,
+        async function (img) {
+          if (!img) {
+            return reject(new Error(`Image load error for ${obj.src}`));
+          }
+
+          // 直接在 fromURL 的回调里计算 scale（img.width/height 就是原图尺寸）
+          const tempCont = cloneData(obj);
+          const scaleX = (tempCont.width * tempCont.scaleX) / img.width!;
+          const scaleY = (tempCont.height * tempCont.scaleY) / img.height!;
+          obj.scaleX = scaleX;
+          obj.scaleY = scaleY;
+
+          if (obj.clipPath) {
+            const { clipPath } = await FabricClipPath.create(obj);
+            obj.clipPath = clipPath;
+          }
+
+          img.set({
+            ...obj,
+            selectable: false,
+            visible: isRender
+          });
+
+          _this.getCanvas().add(img);
+          await _this.requestRender();
+          resolve(undefined);
+        },
+        { crossOrigin: 'anonymous' }
+      );
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+  public addImageold(obj: FabricObjectVO) {
     const _this = this;
 
     // 深拷贝对象

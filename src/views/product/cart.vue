@@ -940,7 +940,6 @@ const handleCarousel = (index: number) => {
   nextTick(() => {
     const defaultUrl = productData.value?.default_image?.original_url;
     const url = productImgs.value?.[index]?.original_url || defaultUrl;
-
     initCanvas({
       carouselRef: carouselRef.value,
       canvasRef: canvasRef.value,
