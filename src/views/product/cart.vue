@@ -587,26 +587,6 @@
                         </option>
                       </select>
                     </template>
-                    <template v-else-if="group.group_type === 'size'">
-                      <select
-                        :id="'group_' + key"
-                        class="form-control form-control-select"
-                        :aria-label="group.name"
-                        :data-product-attribute="key"
-                        :name="'group[' + key + ']'"
-                        @change="onSelectChange(group.attributes, $event)"
-                      >
-                        <option
-                          v-for="(groupAttribute, idAttribute) in group.attributes"
-                          :key="idAttribute"
-                          :value="idAttribute"
-                          :title="groupAttribute.name"
-                          :selected="groupAttribute.selected"
-                        >
-                          {{ groupAttribute.name }}
-                        </option>
-                      </select>
-                    </template>
                     <template v-else-if="group.group_type === 'color'">
                       <ul :id="'group_' + key">
                         <li v-for="(groupAttribute, idAttribute) in group.attributes" :key="idAttribute" class="float-xs-left input-container">
@@ -633,6 +613,26 @@
                           </label>
                         </li>
                       </ul>
+                    </template>
+                    <template v-else-if="group.group_type === 'size'">
+                      <select
+                        :id="'group_' + key"
+                        class="form-control form-control-select"
+                        :aria-label="group.name"
+                        :data-product-attribute="key"
+                        :name="'group[' + key + ']'"
+                        @change="onSelectChange(group.attributes, $event)"
+                      >
+                        <option
+                          v-for="(groupAttribute, idAttribute) in group.attributes"
+                          :key="idAttribute"
+                          :value="idAttribute"
+                          :title="groupAttribute.name"
+                          :selected="groupAttribute.selected"
+                        >
+                          {{ groupAttribute.name }}
+                        </option>
+                      </select>
                     </template>
                     <template v-else-if="group.group_type === 'radio'">
                       <ul :id="'group_' + key">

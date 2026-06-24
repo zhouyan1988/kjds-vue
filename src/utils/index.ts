@@ -366,15 +366,23 @@ export const handlePrice = (product: CategoryProductDataVO, attr: AttribugesGrou
       }
     }
   }
-  let price = product.current_price;
+
+  console.log(selectedAttr);
+
+  let price = 0;
   for (const combinationsKey in attr?.combinations) {
     const combination: TheChild = attr?.combinations[combinationsKey];
+console.log(combination?.attributes);
+
     if (combination?.attributes?.join(',') == selectedAttr?.join(',')) {
+
       price += combination.price;
+ 
+    console.log(price);
       break;
     }
   }
-  let totalPrice = numericalArithmetic(product.base_price, price, '+');
+  let totalPrice = numericalArithmetic(product.current_price, price, '+');
   if (templJsonObjects && templJsonObjects.length) {
     for (let i = 0; i < templJsonObjects.length; i++) {
       const curtTempl = templJsonObjects[i];
@@ -405,3 +413,22 @@ export const clearSelection = (attrs: TheAttributesChild) => {
     }
   }
 };
+
+function arraysEqualIgnoreOrder(arr1, arr2) {
+  if (arr1.length !== arr2.length) return false;
+  
+
+  const countMap = new Map();
+  for (const num of arr1) {
+    countMap.set(num, (countMap.get(num) || 0) + 1);
+  }
+  
+  for (const num of arr2) {
+    if (!countMap.has(num)) return false;
+    const count = countMap.get(num) - 1;
+    if (count < 0) return false;
+    countMap.set(num, count);
+  }
+  
+  return true;
+}
