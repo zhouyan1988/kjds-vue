@@ -1210,11 +1210,24 @@ const iframeParent = window.parent;
 let resizeObserver: ResizeObserver | null = null;
 // 发送产品信息区域高度给父iframe
 const sendProductInfoHeight = () => {
-  if (!productInfoRef.value) return;
-  const height = productInfoRef.value.offsetHeight;
+  // 1. 获取 el-row 高度
+  let rowHeight = 0;
+  const cartBox = document.querySelector('.l-cart-box');
+  if (cartBox && cartBox.children[0]) {
+    rowHeight = (cartBox.children[0] as HTMLElement).offsetHeight;
+  }
+
+  // 2. 获取右侧商品信息高度
+  let infoHeight = 0;
+  if (productInfoRef.value) {
+    infoHeight = productInfoRef.value.offsetHeight;
+  }
+
+  // 一次性把两个高度传给父页面
   iframeParent.postMessage({
     type: 'updateIframeHeight',
-    height: height
+    rowHeight: rowHeight,
+    infoHeight: infoHeight
   }, '*');
 };
 // 监听元素尺寸变化

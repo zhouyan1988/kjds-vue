@@ -20,16 +20,16 @@ ol {
 
 .l-cart-carousel {
   position: relative;
-  height: 0;
-  padding-bottom: 100%;
-  background: rgb(246, 246, 247);
+  // height: 0;
+  // padding-bottom: 100%;
+  // background: rgb(246, 246, 247);
   border: 1px solid rgb(240, 240, 240);
 
   .konvajs-content {
     position: relative;
     user-select: none;
     width: 100% !important;
-    height: auto !important;
+    // height: auto !important;
 
     :deep(.canvas-container) {
       width: 100% !important;
@@ -579,5 +579,11 @@ select.form-control:not([size]):not([multiple]) {
   }
   50% {
       transform: scaleY(2);
+  }
+}
+.l-cart-carousel.main-image {
+  min-height: 620px;
+  @media (max-width: 767px) {
+    min-height: 450px;
   }
 }
