@@ -2,7 +2,9 @@
   <div class="l-cart-box">
     <el-row :gutter="44">
       <el-col :xl="14" :lg="14" :md="14" :sm="14" :xs="24">
-        <div ref="carouselRef" v-loading="loading" class="l-cart-carousel main-image" element-loading-background="rgba(255, 255, 255, 1)">
+        <div ref="carouselRef" v-loading="loading" class="l-cart-carousel main-image" element-loading-background="rgba(255, 255, 255, 1)" 
+            :style="{ minHeight: (carouselHeight || baseMinH) + 'px' }"
+        >
           <div class="konvajs-content" :style="{ width: carouselWidth + 'px', height: carouselHeight + 'px' }">
             <canvas ref="canvasRef" :style="{ width: carouselWidth + 'px', height: carouselHeight + 'px' }"></canvas>
           </div>
@@ -904,7 +906,7 @@ const cartFormRefreshUrl = ref(cartFormAction.value + '?ajax=1&action=refresh');
 const psShoppingCartUrl = ref(import.meta.env.VITE_APP_SHOP_API + '/module/ps_shoppingcart/ajax');
 const carouselRef = ref<HTMLElement>(null);
 const canvasRef = ref<HTMLElement>(null);
-
+const baseMinH = computed(() => window.innerWidth > 767 ? 610 : 410)
 // 防止重复提交
 const isSubmitting = ref(false);
 
