@@ -1282,6 +1282,9 @@ onUnmounted(() => {
 .public-pink-btn-loading .dot:nth-child(4) {
     animation-delay: 0.9s;
 }
+
+.picture-Yellow{ background-color:yellow; }
+
 @keyframes stretch {
   0%, 100% {
       transform: scaleY(1);
