@@ -6,7 +6,27 @@
             :style="{ minHeight: (carouselHeight || baseMinH) + 'px' }"
         >
           <div class="konvajs-content" :style="{ width: carouselWidth + 'px', height: carouselHeight + 'px' }">
-            <canvas ref="canvasRef" :style="{ width: carouselWidth + 'px', height: carouselHeight + 'px' }"></canvas>
+           <!-- 底层商品背景图 -->
+              <img 
+                ref="bgImageRef"
+                class="canvas-bg-img"
+                :src="canvasBgUrl"
+                alt="product bg"
+                :style="{ 
+                  width: carouselWidth + 'px', 
+                  height: carouselHeight + 'px',
+                  zIndex: showBgOnTop ? 3 : 1 
+                }"
+              />
+              <canvas 
+                ref="canvasRef" 
+                :style="{ 
+                  width: carouselWidth + 'px', 
+                  height: carouselHeight + 'px',
+                  opacity: showBgOnTop ? 0 : 1,
+                  zIndex: 2 
+                }"
+              ></canvas>
           </div>
         </div>
         <div class="slider slider--no-scrollbar">
@@ -932,29 +952,46 @@ const showError = (message = 'No available templates found') => {
   ElMessage.error(message);
 };
 
+let carouselTimer: number | null = null;
+// 新增
+const bgImageRef = ref<HTMLImageElement | null>(null);
+const canvasBgUrl = ref('');
+// 标记画布是否已初始化，防止重复init
+const canvasInited = ref(false);
+const showBgOnTop = ref(false);
 /**
  * 切换产品轮播图
  * @param index 轮播图索引
  */
-const handleCarousel = (index: number) => {
+ const handleCarousel = (index: number) => {
   selImg.value = index;
+  const defaultUrl = productData.value?.default_image?.original_url;
+  const url = productImgs.value?.[index]?.original_url || defaultUrl;
+  canvasBgUrl.value = url;
+  // 点击缩略图：图片置顶，隐藏canvas
+  showBgOnTop.value = true;
 
-  nextTick(() => {
-    const defaultUrl = productData.value?.default_image?.original_url;
-    const url = productImgs.value?.[index]?.original_url || defaultUrl;
-    initCanvas({
-      carouselRef: carouselRef.value,
-      canvasRef: canvasRef.value,
-      useType: UseCanvasEditorTypeEnum.Cart,
-      styleId: productMergeStyleNewest.value.styleId as string,
-      combinationId: productMergeStyleNewest.value.id as string,
-      productId: productId as string,
-      productImageUrl: url,
-      setOptionsPrice: false
-    });
+  nextTick(async () => {
+    // 只有画布没初始化过，才执行 initCanvas
+    if (!canvasInited.value) {
+      await initCanvas({
+        carouselRef: carouselRef.value,
+        canvasRef: canvasRef.value,
+        useType: UseCanvasEditorTypeEnum.Cart,
+        styleId: productMergeStyleNewest.value.styleId as string,
+        combinationId: productMergeStyleNewest.value.id as string,
+        productId: productId as string,
+        productImageUrl: url,
+        setOptionsPrice: false
+      });
+      canvasInited.value = true;
+    } else {
+      // 画布已初始化，更新画布底图并重绘
+     
+    }
+    // 此处禁止写 showBgOnTop.value = false，交给下方watch统一处理
   });
 };
-
 const getProductData = async () => {
   if (!productId) return;
 
@@ -1245,6 +1282,16 @@ const observeProductInfoHeight = () => {
   });
 };
 
+
+watch(
+  templJsonObjects,
+  () => {
+    nextTick(() => {
+      showBgOnTop.value = false;
+    });
+  },
+  { deep: true }
+);
 onMounted(() => {
   if (token) {
     setShopToken(token as string);
@@ -1293,6 +1340,20 @@ onUnmounted(() => {
   }
   50% {
       transform: scaleY(2);
+  }
+}
+.konvajs-content {
+  position: relative;
+  .canvas-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: contain;
+    transition: z-index 0.15s ease;
+  }
+  canvas {
+    position: relative;
+    transition: opacity 0.15s ease;
   }
 }
 </style>

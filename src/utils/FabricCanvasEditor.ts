@@ -217,6 +217,7 @@ export class FabricCanvasEditor {
    * 使用 requestAnimationFrame 优化渲染性能，避免频繁重复渲染
    * 通过 renderPending 标志确保同一时间只发起一次渲染请求
    */
+  public showBgOnTopRef: Ref<boolean> | null = null;
   private requestRender() {
     if (!this.renderPending) {
       this.renderPending = true;
@@ -423,6 +424,10 @@ export class FabricCanvasEditor {
       );
     _this.getFabricCanvasEditor().remove(...objectsToRemove);
     _this.requestRender();
+  }
+
+  public isCanvasInitialized(): boolean {
+    return this._canvas !== undefined && this._canvas !== null;
   }
 
   /**
