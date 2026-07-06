@@ -34,6 +34,79 @@ declare module '@kuaitu/core' {
   interface IEditor extends IPlugin {}
 }
 
+function isRemoteImageSrc(src: unknown) {
+  return typeof src === 'string' && /^https?:\/\//i.test(src);
+}
+
+function patchImageCrossOrigin(value: any) {
+  if (!value || typeof value !== 'object') return;
+
+  if (Array.isArray(value)) {
+    value.forEach(patchImageCrossOrigin);
+    return;
+  }
+
+  if (value.type === EditorTypeEnum.Image && isRemoteImageSrc(value.src)) {
+    value.crossOrigin = value.crossOrigin || 'anonymous';
+  }
+
+  Object.values(value).forEach(patchImageCrossOrigin);
+}
+
+
+function getFabricImageSrc(image: fabric.Image) {
+  return typeof image.getSrc === 'function' ? image.getSrc() : (image as any).src || (image as any)._element?.src || '';
+}
+
+function getFabricImageElement(image: fabric.Image): HTMLImageElement | undefined {
+  return typeof image.getElement === 'function' ? (image.getElement() as HTMLImageElement) : (image as any)._element;
+}
+
+function collectCanvasObjects(object: any, result: any[] = []) {
+  if (!object) return result;
+  result.push(object);
+  if (Array.isArray(object._objects)) {
+    object._objects.forEach((item: any) => collectCanvasObjects(item, result));
+  }
+  return result;
+}
+
+function ensureImageCrossOrigin(image: fabric.Image): Promise<void> {
+  const src = getFabricImageSrc(image);
+  if (!isRemoteImageSrc(src)) return Promise.resolve();
+
+  const element = getFabricImageElement(image);
+  if ((image as any).crossOrigin === 'anonymous' && element?.crossOrigin?.toLowerCase() === 'anonymous') {
+    return Promise.resolve();
+  }
+
+  (image as any).crossOrigin = 'anonymous';
+  image.set('crossOrigin' as any, 'anonymous');
+
+  if (typeof image.setSrc !== 'function') {
+    if (element) element.crossOrigin = 'anonymous';
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve) => {
+    const timer = window.setTimeout(() => {
+      console.warn('[fabric] image crossOrigin reload timeout, canvas export may still fail:', src);
+      resolve();
+    }, 5000);
+
+    image.setSrc(
+      src,
+      () => {
+        window.clearTimeout(timer);
+        (image as any).crossOrigin = 'anonymous';
+        image.set('crossOrigin' as any, 'anonymous');
+        resolve();
+      },
+      { crossOrigin: 'anonymous' }
+    );
+  });
+}
+
 function transformText(objects: any) {
   if (!objects) return;
   objects.forEach((item: any) => {
@@ -155,6 +228,7 @@ class ServersPlugin implements IPluginTempl {
 
     // hookTransform遍历
     const tempTransform = await this._transform(temp);
+    patchImageCrossOrigin(tempTransform);
     jsonFile = JSON.stringify(tempTransform);
     // 加载前钩子
     this.editor.hooksEntity.hookImportBefore.callAsync(jsonFile, () => {
@@ -266,8 +340,16 @@ class ServersPlugin implements IPluginTempl {
     });
   }
 
+  async ensureCanvasImagesCrossOrigin() {
+    const objects = this.canvas.getObjects().flatMap((object) => collectCanvasObjects(object));
+    const images = objects.filter((object): object is fabric.Image => object?.type === EditorTypeEnum.Image);
+    await Promise.all(images.map((image) => ensureImageCrossOrigin(image)));
+    this.canvas.renderAll();
+  }
+
   saveImg() {
-    this.editor.hooksEntity.hookSaveBefore.callAsync('', () => {
+    this.editor.hooksEntity.hookSaveBefore.callAsync('', async () => {
+      await this.ensureCanvasImagesCrossOrigin();
       const option = this._getSaveOption();
       this.canvas.setViewportTransform([1, 0, 0, 1, 0, 0]);
       const dataUrl = this.canvas.toDataURL(option);
@@ -279,7 +361,8 @@ class ServersPlugin implements IPluginTempl {
 
   preview() {
     return new Promise<string>((resolve) => {
-      this.editor.hooksEntity.hookSaveBefore.callAsync('', () => {
+      this.editor.hooksEntity.hookSaveBefore.callAsync('', async () => {
+        await this.ensureCanvasImagesCrossOrigin();
         const option = this._getSaveOption();
         this.canvas.setViewportTransform([1, 0, 0, 1, 0, 0]);
         this.canvas.renderAll();

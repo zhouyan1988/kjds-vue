@@ -141,6 +141,7 @@ export class FabricImageUtils {
    * 切换图片地址
    */
   public changeImage(obj: FabricObjectVO, src: string) {
+    console.log('add image');
     const _this = this;
     obj = cloneData(obj);
     _this.getCanvas().forEachObject(async (vo: FabricObjectVO) => {
