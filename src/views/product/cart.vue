@@ -1088,7 +1088,15 @@ const handleShoppingCartAdd = async () => {
 
     // 构建表单数据并提交
     const formData = new FormData(cartFormRef.value);
-    const response = await axios.post(cartFormAction.value, formData, {
+    const formParams = new URLSearchParams();
+
+    formData.forEach((value, key) => {
+      if (typeof value === 'string') {
+        formParams.append(key, value);
+      }
+    });
+
+    const response = await axios.post(cartFormAction.value, formParams.toString(), {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
       }
