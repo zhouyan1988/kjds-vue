@@ -585,7 +585,10 @@ export function useCanvasEditor() {
    * 修改图片对象
    * @param item 画布对象
    */
-  const changeImage = (item: FabricObjectVO) => {
+  const changeImage = (item: FabricObjectVO, src?: string) => {
+    if (src) {
+      item.src = src;
+    }
     fabricCanvasEditor.imageUtils.changeImage(item, item.src);
   };
 

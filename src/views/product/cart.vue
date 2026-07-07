@@ -784,7 +784,7 @@
                       </Tooltip>
                     </div>
                     <div v-if="i?.personalized" class="imgBox">
-                      <RadioGroup v-model="i.src" class="l-personalized-img" @on-change="changeImage(i)">
+                      <RadioGroup v-model="i.src" class="l-personalized-img" @on-change="changeImage(i, $event)">
                         <Radio v-for="(item, index) in i?.personalizedImgs" :key="index" :label="item.src">
                           <div class="l-personalized-img-radio">
                             <Image class="l-personalized-image" :src="item.src" fit="contain" width="70px" height="70px">
@@ -794,16 +794,16 @@
                             <div v-else class="l-personalized-image-text">&nbsp;&nbsp;</div>
                           </div>
                           <!--定制图片-->
-                          <div v-if="typeof i === 'object' && i.src === item.src" class="postionSelect" style="display: none !important">
-                            <template v-for="(di, didx) in designAttr.design_option_result">
-                              <div v-if="di.title === 'design_image'" :key="`postion_select_` + didx" style="display: none !important">
-                                <input class="design_image" type="hidden" name="design_option_images[]" :value="item.src" />
-                                <input type="hidden" name="design_option_ids[images][]" :value="di.id_design_option" />
-                              </div>
-                            </template>
-                          </div>
                         </Radio>
                       </RadioGroup>
+                      <div v-if="i.src" class="postionSelect" style="display: none !important">
+                        <template v-for="(di, didx) in designAttr.design_option_result">
+                          <div v-if="di.title === 'design_image'" :key="`postion_personalized_${i.id || idx}_` + didx" style="display: none !important">
+                            <input class="design_image" type="hidden" name="design_option_images[]" :value="i.src" />
+                            <input type="hidden" name="design_option_ids[images][]" :value="di.id_design_option" />
+                          </div>
+                        </template>
+                      </div>
                     </div>
                     <div v-else-if="i?.userupload" class="imgBox">
                       <div class="imgList">
@@ -815,6 +815,14 @@
                           <div v-else class="img-upload-inner">
                             <img :src="i.src" alt="" style="width: 100%; height: 100%" />
                           </div>
+                        </div>
+                        <div v-if="i.src" class="postionSelect" style="display: none !important">
+                          <template v-for="(di, didx) in designAttr.design_option_result">
+                            <div v-if="di.title === 'design_image'" :key="`postion_upload_${i.id || idx}_` + didx" style="display: none !important">
+                              <input class="design_image" type="hidden" name="design_option_images[]" :value="i.src" />
+                              <input type="hidden" name="design_option_ids[images][]" :value="di.id_design_option" />
+                            </div>
+                          </template>
                         </div>
                       </div>
                     </div>
@@ -1281,7 +1289,6 @@ const observeProductInfoHeight = () => {
     sendProductInfoHeight();
   });
 };
-
 
 watch(
   templJsonObjects,
