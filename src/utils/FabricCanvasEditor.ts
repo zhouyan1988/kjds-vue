@@ -375,6 +375,43 @@ export class FabricCanvasEditor {
     }
   }
 
+  private getCanvasObjectTemplateOrder(obj: fabric.Object, orderMap: Map<string, number>): number {
+    const item = obj as FabricObjectVO & { _objects?: FabricObjectVO[] };
+
+    if (item.id && orderMap.has(item.id)) {
+      return orderMap.get(item.id) ?? Number.MAX_SAFE_INTEGER;
+    }
+
+    const child = item._objects?.find((childItem) => childItem.id && orderMap.has(childItem.id));
+    if (child?.id) {
+      return orderMap.get(child.id) ?? Number.MAX_SAFE_INTEGER;
+    }
+
+    return Number.MAX_SAFE_INTEGER;
+  }
+
+  private sortCanvasObjectsByTemplateOrder(objs: FabricObjectVO[]) {
+    const canvas = this.getFabricCanvasEditor();
+    const orderMap = new Map<string, number>();
+
+    objs.forEach((obj, index) => {
+      if (obj.id) {
+        orderMap.set(obj.id, index);
+      }
+    });
+
+    const canvasObjects = canvas.getObjects();
+    const originalOrder = new Map<fabric.Object, number>();
+    canvasObjects.forEach((obj, index) => originalOrder.set(obj, index));
+
+    [...canvasObjects]
+      .sort((a, b) => {
+        const diff = this.getCanvasObjectTemplateOrder(a, orderMap) - this.getCanvasObjectTemplateOrder(b, orderMap);
+        return diff || (originalOrder.get(a) ?? 0) - (originalOrder.get(b) ?? 0);
+      })
+      .forEach((obj, index) => canvas.moveTo(obj, index));
+  }
+
   public async setCanvasByObjects(objs: FabricObjectVO[]) {
     if (!objs?.length) {
       console.error('setCanvasByObjects objs is empty');
@@ -384,28 +421,28 @@ export class FabricCanvasEditor {
     _this.templJsonObjects = objs;
     _this._fabricCondition.setObjects(objs);
 
-    // Add objects in JSON order to match the editor layer stack.
-    for (let i = 0; i < objs.length; i++) {
-      const item: FabricObjectVO = objs[i];
-      try {
-        if (item.type === EditorTypeEnum.Image) {
-          await _this.imageUtils.addImage(item);
-        } else if (item.type === EditorTypeEnum.IText) {
-          if (item.path) {
-            await _this.pathTextUtils.addPathText(item);
-          } else {
-            await _this.textUtils.addText(item);
+    await Promise.all(
+      objs.map(async (item: FabricObjectVO) => {
+        try {
+          if (item.type === EditorTypeEnum.Image) {
+            await _this.imageUtils.addImage(item);
+          } else if (item.type === EditorTypeEnum.IText) {
+            if (item.path) {
+              await _this.pathTextUtils.addPathText(item);
+            } else {
+              await _this.textUtils.addText(item);
+            }
+          } else if (item.type === EditorTypeEnum.TextBox) {
+            await _this.textUtils.addTextbox(item);
           }
-        } else if (item.type === EditorTypeEnum.TextBox) {
-          await _this.textUtils.addTextbox(item);
+        } catch (error) {
+          console.error(`设置图层对象错误 ${item.id}:`, error);
+          throw new Error(`设置图层对象错误 ${item.id}`);
         }
-      } catch (error) {
-        console.error(`设置图层对象错误 ${item.id}:`, error);
-        throw new Error(`设置图层对象错误 ${item.id}`);
-      }
-    }
+      })
+    );
 
-    // Render once after all objects are added.
+    _this.sortCanvasObjectsByTemplateOrder(objs);
     _this.requestRender();
   }
 
