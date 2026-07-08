@@ -2,31 +2,38 @@
   <div class="l-cart-box">
     <el-row :gutter="44">
       <el-col :xl="14" :lg="14" :md="14" :sm="14" :xs="24">
-        <div ref="carouselRef" v-loading="loading" class="l-cart-carousel main-image" element-loading-background="rgba(255, 255, 255, 1)" 
-            :style="{ minHeight: (carouselHeight || baseMinH) + 'px' }"
+        <div
+          ref="carouselRef"
+          v-loading="loading && !canvasBgUrl"
+          class="l-cart-carousel main-image"
+          element-loading-background="rgba(255, 255, 255, 1)"
+          :style="{ minHeight: (carouselHeight || baseMinH) + 'px' }"
         >
-          <div class="konvajs-content" :style="{ width: carouselWidth + 'px', height: carouselHeight + 'px' }">
-           <!-- 底层商品背景图 -->
-              <img 
-                ref="bgImageRef"
-                class="canvas-bg-img"
-                :src="canvasBgUrl"
-                alt="product bg"
-                :style="{ 
-                  width: carouselWidth + 'px', 
-                  height: carouselHeight + 'px',
-                  zIndex: showBgOnTop ? 3 : 1 
-                }"
-              />
-              <canvas 
-                ref="canvasRef" 
-                :style="{ 
-                  width: carouselWidth + 'px', 
-                  height: carouselHeight + 'px',
-                  opacity: showBgOnTop ? 0 : 1,
-                  zIndex: 2 
-                }"
-              ></canvas>
+          <div
+            class="konvajs-content"
+            :style="{ width: carouselWidth ? carouselWidth + 'px' : '100%', height: (carouselHeight || baseMinH) + 'px' }"
+          >
+            <!-- 底层商品背景图 -->
+            <img
+              ref="bgImageRef"
+              class="canvas-bg-img"
+              :src="canvasBgUrl"
+              alt="product bg"
+              :style="{
+                width: carouselWidth ? carouselWidth + 'px' : '100%',
+                height: (carouselHeight || baseMinH) + 'px',
+                zIndex: showBgOnTop ? 3 : 1
+              }"
+            />
+            <canvas
+              ref="canvasRef"
+              :style="{
+                width: carouselWidth ? carouselWidth + 'px' : '100%',
+                height: (carouselHeight || baseMinH) + 'px',
+                opacity: showBgOnTop ? 0 : 1,
+                zIndex: 2
+              }"
+            ></canvas>
           </div>
         </div>
         <div class="slider slider--no-scrollbar">
@@ -993,34 +1000,30 @@ const showBgOnTop = ref(false);
         setOptionsPrice: false
       });
       canvasInited.value = true;
+      showBgOnTop.value = false;
     } else {
       // 画布已初始化，更新画布底图并重绘
      
     }
-    // 此处禁止写 showBgOnTop.value = false，交给下方watch统一处理
+    // Initial load switches back to canvas after initCanvas finishes; later changes are handled by the loading watcher.
   });
 };
 const getProductData = async () => {
   if (!productId) return;
 
   try {
-    const mergeStyleRes = await getProductMergeStyleNewest({
+    const mergeStylePromise = getProductMergeStyleNewest({
       productId: productId as string
     });
 
-    if (!mergeStyleRes.data) {
-      showError();
-      return;
-    }
-
-    productMergeStyleNewest.value = mergeStyleRes.data;
-
-    const productDetailRes = await getProductDetail({
+    const productDetailPromise = getProductDetail({
       id: productId as string,
       id_currency: (id_currency as string) || '1',
       id_shop: (id_shop as string) || '1',
       SubmitCurrency: '1'
     });
+
+    const productDetailRes = await productDetailPromise;
 
     if (!productDetailRes?.data) return;
 
@@ -1030,8 +1033,24 @@ const getProductData = async () => {
     designAttr.value = data?.designAttribute;
     productImgs.value = data?.images;
 
-    handleCarousel(0);
+    const firstProductImageUrl = productImgs.value?.[0]?.original_url || data?.default_image?.original_url;
+    if (firstProductImageUrl) {
+      selImg.value = 0;
+      canvasBgUrl.value = firstProductImageUrl;
+      showBgOnTop.value = true;
+    }
+
     sendProductDescToParent();
+
+    const mergeStyleRes = await mergeStylePromise;
+
+    if (!mergeStyleRes.data) {
+      showError();
+      return;
+    }
+
+    productMergeStyleNewest.value = mergeStyleRes.data;
+    handleCarousel(0);
   } catch (error) {
     showError();
   }
@@ -1298,15 +1317,17 @@ const observeProductInfoHeight = () => {
   });
 };
 
-watch(
-  templJsonObjects,
-  () => {
-    nextTick(() => {
+watch(loading, (isLoading) => {
+  if (isLoading && canvasBgUrl.value) {
+    showBgOnTop.value = true;
+    return;
+  }
+  nextTick(() => {
+    if (canvasInited.value) {
       showBgOnTop.value = false;
-    });
-  },
-  { deep: true }
-);
+    }
+  });
+});
 onMounted(() => {
   if (token) {
     setShopToken(token as string);
