@@ -196,7 +196,7 @@
                       </Radio>
                     </RadioGroup>
                     <div v-if="i.src" class="postionSelect" style="display: none !important">
-                      <template v-for="(di, didx) in designAttr.design_option_result">
+                      <template v-for="(di, didx) in designAttr?.design_option_result || []">
                         <div v-if="di.title === 'design_image'" :key="`postion_personalized_${i.id || idx}_` + didx" style="display: none !important">
                           <input class="design_image" type="hidden" name="design_option_images[]" :value="i.src" />
                           <input type="hidden" name="design_option_ids[images][]" :value="di.id_design_option" />
@@ -216,7 +216,7 @@
                           </div>
                         </div>
                         <div v-if="i.src" class="postionSelect" style="display: none !important">
-                          <template v-for="(di, didx) in designAttr.design_option_result">
+                          <template v-for="(di, didx) in designAttr?.design_option_result || []">
                             <div v-if="di.title === 'design_image'" :key="`postion_upload_${i.id || idx}_` + didx" style="display: none !important">
                               <input class="design_image" type="hidden" name="design_option_images[]" :value="i.src" />
                               <input type="hidden" name="design_option_ids[images][]" :value="di.id_design_option" />
@@ -272,6 +272,7 @@ const {
   templateOptions,
   fabricCanvasEditor,
   productMergeStyleData,
+  designAttr,
   initCanvas,
   selectTempl,
   editTempl,
@@ -339,6 +340,7 @@ const getProductData = async () => {
       ElMessage.error('获取产品详情失败');
       return;
     }
+    designAttr.value = res.data?.designAttribute || designAttr.value;
     await nextTick(() => {
       initCanvas({
         carouselRef: carouselRef.value,
