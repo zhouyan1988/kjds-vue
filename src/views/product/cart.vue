@@ -894,6 +894,7 @@ import { clearSelection, getPricePrefix, handleAttribugesGroups, handlePrice } f
 import { ProductMergeStyleVO } from '@/api/kjds/productMergeStyle/types';
 import { setShopToken } from '@/utils/auth';
 import { useCanvasEditor, UseCanvasEditorTypeEnum } from '@/utils/FabricCanvasEditorUse';
+import { handleImgUrl } from '@/utils/FabricCanvasEditor';
 import axios from 'axios';
 import { Icon, Image, Option, Radio, RadioGroup, Tooltip } from 'view-ui-plus';
 
@@ -907,6 +908,7 @@ const {
   loading,
   carouselWidth,
   carouselHeight,
+  carouselRatio,
   styleDataTempls,
   selCurtTempl,
   selCurtTemplPrice,
@@ -926,11 +928,11 @@ const {
   initCanvas,
   changeTempl,
   calcCurtTemplPrice,
-  changeText,
-  changeImage,
-  changeUploadImage,
-  changeOptions,
-  changeImageColorOptions,
+  changeText: updateCanvasText,
+  changeImage: updateCanvasImage,
+  changeUploadImage: updateCanvasUploadImage,
+  changeOptions: updateCanvasOptions,
+  changeImageColorOptions: updateCanvasImageColorOptions,
   calcCurtTemplOptionTotalPrice,
   getCurtTextConfig
 } = useCanvasEditor();
@@ -974,6 +976,55 @@ const canvasBgUrl = ref('');
 // 标记画布是否已初始化，防止重复init
 const canvasInited = ref(false);
 const showBgOnTop = ref(false);
+
+const syncCanvasBackground = (url?: string) => {
+  if (!url || !canvasInited.value) return;
+
+  const canvas = fabricCanvasEditor.fabricCanvasEditor;
+  canvas.setBackgroundImage(handleImgUrl(url), canvas.renderAll.bind(canvas), {
+    originX: 'left',
+    originY: 'top',
+    top: 0,
+    left: 0,
+    scaleX: carouselRatio.value,
+    scaleY: carouselRatio.value,
+    crossOrigin: 'anonymous'
+  });
+};
+
+const revealCanvas = () => {
+  if (canvasInited.value) {
+    showBgOnTop.value = false;
+  }
+};
+
+const changeText = (...args: Parameters<typeof updateCanvasText>) => {
+  revealCanvas();
+  updateCanvasText(...args);
+};
+
+const changeImage = (...args: Parameters<typeof updateCanvasImage>) => {
+  revealCanvas();
+  updateCanvasImage(...args);
+};
+
+const changeUploadImage = async (...args: Parameters<typeof updateCanvasUploadImage>) => {
+  revealCanvas();
+  await updateCanvasUploadImage(...args);
+  revealCanvas();
+};
+
+const changeOptions = async (...args: Parameters<typeof updateCanvasOptions>) => {
+  revealCanvas();
+  await updateCanvasOptions(...args);
+  revealCanvas();
+};
+
+const changeImageColorOptions = async (...args: Parameters<typeof updateCanvasImageColorOptions>) => {
+  revealCanvas();
+  await updateCanvasImageColorOptions(...args);
+  revealCanvas();
+};
 /**
  * 切换产品轮播图
  * @param index 轮播图索引
@@ -1002,6 +1053,7 @@ const showBgOnTop = ref(false);
       canvasInited.value = true;
       showBgOnTop.value = false;
     } else {
+      syncCanvasBackground(url);
       // 画布已初始化，更新画布底图并重绘
      
     }
